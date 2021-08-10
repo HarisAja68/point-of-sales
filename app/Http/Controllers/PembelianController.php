@@ -55,6 +55,9 @@ class PembelianController extends Controller
             ->addColumn('supplier', function ($pembelian) {
                 return $pembelian->supplier->nama;
             })
+            ->editColumn('diskon', function ($pembelian) {
+                return $pembelian->diskon. ' %';
+            })
             ->addColumn('aksi', function ($pembelian) {
                 return '
                     <button type="button" onclick="showDetail(`' . route('pembelian.show', $pembelian->id_pembelian) . '`)" class="btn btn-sm btn-info"><i class="fa fa-eye"></i> Detail</button>

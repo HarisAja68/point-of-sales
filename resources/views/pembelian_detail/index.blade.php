@@ -107,7 +107,7 @@
                                 <div class="form-group d-flex">
                                     <label for="diskon" class="col-4 control-label">Diskon</label>
                                     <div class="col-8">
-                                        <input type="number" name="diskon" id="diskon" class="form-control" value="0">
+                                        <input type="number" name="diskon" id="diskon" class="form-control" value="{{ $diskon }}">
                                     </div>
                                 </div>
                                 <div class="form-group d-flex">
