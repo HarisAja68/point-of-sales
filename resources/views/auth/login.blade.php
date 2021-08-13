@@ -55,7 +55,7 @@
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset('img/AdminLTELogo.png') }}" alt="logo" width="100">
+                    <img src="{{ asset('img/logo.png') }}" alt="logo" width="100">
                 </a>
             </div>
 

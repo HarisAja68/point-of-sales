@@ -72,7 +72,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('penjualan.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-upload"></i>
                         <p>
                             Penjualan
@@ -80,15 +80,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('transaksi.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-shopping-cart"></i>
                         <p>
-                            Transaksi Lama
+                            Transaksi Aktif
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('transaksi.baru') }}" class="nav-link">
                         <i class="nav-icon fas fa-cart-plus"></i>
                         <p>
                             Transaksi Baru
@@ -106,7 +106,7 @@
                 </li>
                 <li class="nav-header">SYSTEM</li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('transaksi.index') }}" class="nav-link">
                         <i class=" nav-icon fas fa-users"></i>
                         <p>
                             User
@@ -114,7 +114,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('transaksi.baru') }}" class="nav-link">
                         <i class="nav-icon fas fa-cogs"></i>
                         <p>
                             Setting

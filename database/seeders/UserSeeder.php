@@ -23,6 +23,14 @@ class UserSeeder extends Seeder
                 'level' => 1,
                 'created_at' => Date('Y-m-d H:i:s'),
                 'updated_at' => Date('Y-m-d H:i:s'),
+            ],
+            [
+                'name' => 'Kasir',
+                'email' => 'kasir@gmail.com',
+                'password' => Hash::make('12345678'),
+                'level' => 0,
+                'created_at' => Date('Y-m-d H:i:s'),
+                'updated_at' => Date('Y-m-d H:i:s'),
             ]
         ]);
     }
