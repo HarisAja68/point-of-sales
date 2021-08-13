@@ -6,6 +6,7 @@ use App\Models\Penjualan;
 use App\Models\PenjualanDetail;
 use App\Models\Produk;
 use App\Models\Setting;
+use PDF;
 use Illuminate\Http\Request;
 
 class PenjualanController extends Controller
@@ -144,17 +145,26 @@ class PenjualanController extends Controller
     public function notaKecil()
     {
         $setting = Setting::first();
-        $penjualan = Penjualan::find(session('id_pembelian'));
+        $penjualan = Penjualan::find(session('id_penjualan'));
         if (! $penjualan) {
             abort(404);
         }
-        $detail = PenjualanDetail::with('produk')->where('id_pembelian', session('id_pembelian'))->get();
+        $detail = PenjualanDetail::with('produk')->where('id_penjualan', session('id_penjualan'))->get();
 
-        return view('penjualan.nota_kecil', compact('seeting', 'penjualan', 'detail'));
+        return view('penjualan.nota_kecil', compact('setting', 'penjualan', 'detail'));
     }
 
     public function notaBesar()
     {
-        # code...
+        $setting = Setting::first();
+        $penjualan = Penjualan::find(session('id_penjualan'));
+        if (! $penjualan) {
+            abort(404);
+        }
+        $detail = PenjualanDetail::with('produk')->where('id_penjualan', session('id_penjualan'))->get();
+
+        $pdf = PDF::loadView('penjualan.nota_besar', compact('setting', 'penjualan', 'detail'));
+        $pdf->setPaper(0,0,609,440, 'potrait');
+        return $pdf->stream('Transaksi-'. date('Y-m-d-his') .'.pdf');
     }
 }
