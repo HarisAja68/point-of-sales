@@ -19,7 +19,7 @@ class SettingTableSeeder extends Seeder
                 'nama_perusahaan' => 'Toko Saya',
                 'alamat' => 'Jln. Aja dulu',
                 'telepon' => '0986523178',
-                'tipe_nota' => 1,
+                'tipe_nota' => 1, //tipe kecil
                 'diskon' => 5,
                 'path_logo' => '/img/logo.png',
                 'path_kartu_member' => '/img/member.png',

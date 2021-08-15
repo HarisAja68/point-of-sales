@@ -97,7 +97,7 @@
                 </li>
                 <li class="nav-header">REPORT</li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('laporan.index') }}" class="nav-link">
                         <i class="nav-icon far fa-file-pdf"></i>
                         <p>
                             Laporan

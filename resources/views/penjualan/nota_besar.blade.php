@@ -31,7 +31,7 @@
     <table width="100%">
         <tr>
             <td rowspan="4" width="60%">
-                <img src="{{ public_path($setting->path_logo) }}" alt="{{ $setting->path_logo }}" width="120">
+                <img src="{{ asset($setting->path_logo) }}" alt="{{ $setting->path_logo }}" width="120">
                 <br>
                 {{ $setting->alamat }}
                 <br>
@@ -107,5 +107,9 @@
             </td>
         </tr>
     </table>
+
+    <script type="text/javascript">
+        window.print();
+    </script>
 </body>
 </html>

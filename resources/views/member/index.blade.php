@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-header">
                     <button onclick="addForm('{{ route('member.store') }}')" class="btn btn-success btn-sm"><i class="fa fa-plus-circle"></i> Tambah</button>
-                    <button onclick="cetakMember('{{ route('member.cetak_member') }}')" class="btn btn-info btn-sm"><i class="fa fa-id-card-alt"></i> Cetak Kartu</button>
+                    <button onclick="cetakMember('{{ route('member.cetak_member') }}')" target="_blank" class="btn btn-info btn-sm"><i class="fa fa-id-card-alt"></i> Cetak Kartu</button>
                 </div>
                 <div class="card-body">
                     <form action="" method="post" class="form-member">
