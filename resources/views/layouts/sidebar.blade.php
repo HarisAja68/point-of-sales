@@ -114,7 +114,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="{{ route('setting.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-cogs"></i>
                         <p>
                             Setting
