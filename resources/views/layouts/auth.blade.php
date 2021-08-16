@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name') }} | Log in</title>
+    <link rel="icon" href="{{ url($setting->path_logo) }}" type="image">
+    <title>{{ $setting->nama_perusahaan }} | Log in</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"

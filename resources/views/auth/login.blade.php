@@ -55,7 +55,7 @@
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
                 <a href="{{ url('/') }}">
-                    <img src="{{ asset('img/logo.png') }}" alt="logo" width="100">
+                    <img src="{{ $setting->path_logo }}" alt="logo" width="100">
                 </a>
             </div>
 
@@ -64,7 +64,7 @@
                     @csrf
                     <div class="input-group mb-3">
                         <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-                            value="{{ old('email') }}" placeholder="Email" required>
+                            value="{{ old('email') }}" placeholder="Email" required autofocus>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
