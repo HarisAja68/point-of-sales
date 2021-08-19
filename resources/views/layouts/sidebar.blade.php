@@ -21,6 +21,8 @@
                         </p>
                     </a>
                 </li>
+
+                @if (auth()->user()->level == 1)
                 <li class="nav-header">MASTER</li>
                 <li class="nav-item">
                     <a href="{{ route('kategori.index') }}" class="nav-link">
@@ -121,6 +123,24 @@
                         </p>
                     </a>
                 </li>
+                @else
+                <li class="nav-item">
+                    <a href="{{ route('transaksi.index') }}" class="nav-link">
+                        <i class="nav-icon fas fa-shopping-cart"></i>
+                        <p>
+                            Transaksi Aktif
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('transaksi.baru') }}" class="nav-link">
+                        <i class="nav-icon fas fa-cart-plus"></i>
+                        <p>
+                            Transaksi Baru
+                        </p>
+                    </a>
+                </li>
+                @endif
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

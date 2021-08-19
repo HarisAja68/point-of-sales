@@ -11,14 +11,14 @@
         <!-- menu user -->
         <li class="nav-item dropdown user-menu">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                <img src="{{ url(auth()->user()->foto) }}"
+                <img src="{{ url(auth()->user()->foto ?? '') }}"
                     class="user-image img-circle elevation-2 img-profil" alt="User Image">
                 <span class="d-none d-md-inline">{{ auth()->user()->name }}</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                 <!-- User image -->
                 <li class="user-header bg-primary">
-                    <img src="{{ url(auth()->user()->foto) }}" class="img-circle elevation-2 img-profil"
+                    <img src="{{ url(auth()->user()->foto ?? '') }}" class="img-circle elevation-2 img-profil"
                         alt="User Image">
 
                     <p>
