@@ -37,12 +37,10 @@
                 <br>
                 <br>
             </td>
-            <td>Tanggal</td>
-            <td>: {{ tanggal_indonesia(date('Y-m-d')) }}</td>
+            <td>Tanggal: {{ tanggal_indonesia(date('Y-m-d')) }}</td>
         </tr>
         <tr>
-            <td>Kode Member</td>
-            <td>: {{ $penjualan->member->kode_member ?? '' }}</td>
+            <td>Kode Member: {{ $penjualan->member->kode_member ?? '' }}</td>
         </tr>
     </table>
 
@@ -108,8 +106,8 @@
         </tr>
     </table>
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         window.print();
-    </script>
+    </script> --}}
 </body>
 </html>

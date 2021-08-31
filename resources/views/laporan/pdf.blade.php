@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('template') }}/dist/css/adminlte.min.css">
 </head>
 <body>
-    <h3 class="text-center">Laporan Pendapatan</h3>
+    <h3 class="text-center">Laporan Pendapatan Pertanggal</h3>
     <h4 class="text-center">
         Tanggal {{ tanggal_indonesia($awal) }}
         s/d

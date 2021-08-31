@@ -98,9 +98,9 @@
             @endforeach
         </table>
     </section>
-
+{{--
     <script type="text/javascript">
         window.print();
-    </script>
+    </script> --}}
 </body>
 </html>
