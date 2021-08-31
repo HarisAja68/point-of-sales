@@ -129,9 +129,8 @@
                     $('[name=tipe_nota]').val(response.tipe_nota);
                     $('title').text(response.nama_perusahaan + ' | Setting');
 
-                    $('.tampil-logo').html(`<img src="${response.path_logo}" width="200">`);
-                    $('.tampil-kartu-member').html(`<img src="${response.path_kartu_member}" width="300">`);
-                    $('[rel=icon]').attr('href', `{{ url('/') }}${response.path_logo}`);
+                    $('.tampil-logo').html(`<img src="{{ url('/') }}${response.path_logo}" width="200">`);
+                    $('.tampil-kartu-member').html(`<img src="{{ url('/') }}${response.path_kartu_member}" width="300">`);
                 })
                 .fail(errors => {
                     alert('Tidak dapat menampilkan data');

@@ -55,7 +55,7 @@
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
                 <a href="{{ url('/') }}">
-                    <img src="{{ $setting->path_logo }}" alt="logo" width="100">
+                    <img src="{{ url($setting->path_logo) }}" alt="logo" width="100">
                 </a>
             </div>
 
